@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Niña & Kyle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+<div class="splash-screen">
+  <div class="splash-overlay"></div>
+  <div class="splash-content">
+    <h1 class="names">Niña & Kyle</h1>
+    <button id="enterSite" class="splash-button">You're Invited</button>
+  </div>
+</div>
+
+  <div class="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="nav">
+    <img src="assets/images/logo.jpg" alt="Logo" class="nav-logo" style="height:48px; width:auto; margin-right:24px; vertical-align:middle;" />
+    <div class="nav-buttons">
+      <a href="#home" class="active">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#details">Location</a>
+      <a href="#dresscode">Dress Code</a>
+    </div>
+  </div>
+
+  <div id="home" class="section home">
+    <div class="section-content">
+      <h1 class="names">Niña & Kyle</h1>
+      <p>December 18, 2026</p>
+      <div class="rsvp">
+        <button id="openRsvp" class="rsvp-button">RSVP Now</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="full-width-photo">
+    <img src="./assets/images/9.jpg" alt="Niña & Kyle" class="full-width-image">
+  </div>
+  <div class="countdown-container">
+    <div class="countdown">
+      <div class="countdown-item">
+        <span id="days">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-item">
+        <span id="hours">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-item">
+        <span id="minutes">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-item">
+        <span id="seconds">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="details">
+    <p><i class="fas fa-calendar-alt"></i> Saturday, 18th December 2026</p>
+    <p><i class="fas fa-map-marker-alt"></i> Caleruega Chapel of Transfiguration</p>
+    <p><i class="fas fa-clock"></i> 3:00 PM onwards</p>
+  </div>
+
+  <div class="full-width-photo">
+    <video class="full-width-image" src="assets/videos/prenup.mp4" autoplay muted loop playsinline controls style="background:#000;" preload="none"></video>
+  </div>
+  
+  <div id="story" class="section story-section">
+    <div class="section-content">
+      <div class="single-story-container">
+        <div class="story-image-container">
+          <img src="assets/images/11.jpg" alt="Our Story" class="story-image">
+          <div class="story-date">
+            <span class="date-day">18</span>
+            <span class="date-month">December</span>
+            <span class="date-year">2026</span>
+          </div>
+        </div>
+        <div class="story-text">
+          <h3>Our Story</h3>
+          <p>(Sample Only) first met in college during a literature class where they were both assigned to analyze the same novel. Their debate about the protagonist's motives turned into a coffee date at their favorite campus cafe.</p>
+          <p>After years of shared adventures, Bien surprised Lea with a trip to Paris, proposing at Shakespeare and Company bookstore with the same novel that brought them together placed on her favorite reading chair.</p>
+          <p>From that first coffee date to this moment, our love story has been filled with laughter, adventures, and countless memories. We're so excited to begin this new chapter together surrounded by our loved ones.</p>
+          <div class="story-quote">
+            <i class="fas fa-quote-left"></i>
+            <p>In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.</p>
+            <i class="fas fa-quote-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="photo-gallery">
+    <div class="gallery-main">
+      <img src="./assets/images/1.jpg" alt="Lea and Bien" class="active">
+      <div class="gallery-nav">
+        <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="gallery-thumbnails">
+      <img src="./assets/images/1.jpg" alt="Engagement" class="active">
+      <img src="./assets/images/2.jpg" alt="Together">
+      <img src="./assets/images/3.jpg" alt="Romantic">
+      <img src="./assets/images/4.jpg" alt="Romantic">
+      <img src="./assets/images/5.jpg" alt="Romantic">
+      <img src="./assets/images/6.jpg" alt="Romantic">
+      <img src="./assets/images/7.jpg" alt="Romantic">
+      <img src="./assets/images/8.jpg" alt="Romantic">
+      <img src="./assets/images/9.jpg" alt="Romantic">
+    </div>
+  </div>
+
+  <div class="full-width-photo">
+    <img src="./assets/images/4.jpg" alt="Lea and Bien" class="full-width-image">
+  </div>
+
+  <div id="schedule" class="section schedule-section">
+    <div class="section-content">
+      <div class="single-schedule-container">
+        <div class="schedule-text">
+          <h2 class="section-title">Wedding Schedule</h2>
+          <div class="schedule-item">
+            <div class="time">3:00 PM</div>
+            <div class="event">
+              <h4>Guest Arrival</h4>
+              <p>Welcome drinks and light refreshments</p>
+            </div>
+            <div class="event-icon"><i class="fas fa-glass-cheers"></i></div>
+          </div>
+          <div class="schedule-item">
+            <div class="time">3:30 PM</div>
+            <div class="event">
+              <h4>Ceremony Begins</h4>
+              <p>Exchange of vows under the floral arch</p>
+            </div>
+            <div class="event-icon"><i class="fas fa-ring"></i></div>
+          </div>
+          <div class="schedule-item">
+            <div class="time">4:15 PM</div>
+            <div class="event">
+              <h4>Cocktail Hour</h4>
+              <p>Drinks, canapés and photographs</p>
+            </div>
+            <div class="event-icon"><i class="fas fa-camera"></i></div>
+          </div>
+          <div class="schedule-item">
+            <div class="time">5:30 PM</div>
+            <div class="event">
+              <h4>Reception</h4>
+              <p>Dinner, speeches and dancing</p>
+            </div>
+            <div class="event-icon"><i class="fas fa-utensils"></i></div>
+          </div>
+          <div class="schedule-item">
+            <div class="time">9:00 PM</div>
+            <div class="event">
+              <h4>Send-off</h4>
+              <p>Sparkler farewell</p>
+            </div>
+            <div class="event-icon"><i class="fas fa-heart"></i></div>
+          </div>
+        </div>
+        <div class="schedule-image-container">
+          <img src="./assets/images/10.jpg" alt="Wedding Schedule" class="schedule-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Details Section -->
+<section id="details" class="spa-section">
+  <section class="details-section">
+      <div class="container">
+          <!-- Venues Section -->
+          <section class="venues-section">
+              <h2 class="venues-title">Venues</h2>
+              <div class="venues-grid">
+                  <div class="venue-card">
+                      <div class="venue-img brush-img" style="background-image:url('assets/images/church.jpg')"></div>
+                      <div class="venue-info">
+                          <div class="venue-name">Caleruega Chapel of Transfiguration</div>
+                          <div class="venue-address">4231 Caleruega Road, Nasugbu, Batangas</div>
+                          <a href="https://www.google.com/maps/place/Caleruega+Chapel+of+Transfiguration/@14.0714675,120.8333273,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd96b9fe598991:0xe1cbcb1f58a6135!8m2!3d14.0714675!4d120.8359022!16s%2Fg%2F11r9291dr?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" class="venue-btn" target="_blank" rel="noopener">Go to Church</a>
+                      </div>
+                  </div>
+                  <div class="venue-card">
+                      <div class="venue-img brush-img" style="background-image:url('assets/images/venue.jpg')"></div>
+                      <div class="venue-info">
+                          <div class="venue-name">Abagatan Ti Manila</div>
+                          <div class="venue-address">Amuyong-Kaytitinga Road, Alfonso, 4120 Cavite</div>
+                          <a href="https://www.google.com/maps/place/Abagatan+Ti+Manila/@14.0797118,120.8431736,17z/data=!3m1!4b1!4m9!3m8!1s0x33bd9c4c3717a969:0x81b2d11c9a8a9a22!5m2!4m1!1i2!8m2!3d14.0797118!4d120.8457485!16s%2Fg%2F11clt9nhgk?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" class="venue-btn" target="_blank" rel="noopener">Go to Venue</a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
+  </section>
+</section>
+
+  <div id="dresscode" class="section dresscode-section">
+    <div class="section-content">
+      <h2 class="section-title">Dress Code & Colors</h2>
+      
+      <div class="dresscode-content">
+        <div class="dress-card">
+          <h3>Formal Garden Party Attire</h3>
+          <div class="attire-guidelines">
+            <div class="guideline">
+              <div class="guideline-icon"><i class="fas fa-male"></i></div>
+              <div class="guideline-text">
+                <h4>For Gentlemen</h4>
+                <p>Suits or dress pants with jackets in light colors. Ties optional but encouraged.</p>
+              </div>
+            </div>
+            <div class="guideline">
+              <div class="guideline-icon"><i class="fas fa-female"></i></div>
+              <div class="guideline-text">
+                <h4>For Ladies</h4>
+                <p>Cocktail dresses or formal jumpsuits. Floral patterns welcome.</p>
+              </div>
+            </div>
+            <div class="guideline">
+              <div class="guideline-icon"><i class="fas fa-shoe-prints"></i></div>
+              <div class="guideline-text">
+                <h4>Footwear</h4>
+                <p>Comfortable shoes recommended for garden terrain. Wedges or block heels work well.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="color-palette">
+          <h3>Our Wedding Colors</h3>
+          <p>While not required, we'd love if you incorporated these colors into your outfit!</p>
+          <div class="color-swatches">
+            <div class="color-swatch-container">
+              <div class="color-swatch" style="background-color: #b13e6f;"></div>
+              <span class="color-name">Blush Pink</span>
+            </div>
+            <div class="color-swatch-container">
+              <div class="color-swatch" style="background-color: #4a7c59;"></div>
+              <span class="color-name">Sage Green</span>
+            </div>
+            <div class="color-swatch-container">
+              <div class="color-swatch" style="background-color: #f8e1f4;"></div>
+              <span class="color-name">Soft Pink</span>
+            </div>
+            <div class="color-swatch-container">
+              <div class="color-swatch" style="background-color: #f5f5f5;"></div>
+              <span class="color-name">Cream</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    <div id="rsvpModal" class="rsvp-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeime_JNlrwN3CuAFrXjth34jZESuhtl6oxGB1uPCkkpMKwKw/viewform" 
+              style="width:100%; height:100%; border:none;"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61578582530221" class="social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+      <p class="copyright">© 2026 Cache the Date</p>
+    </div>
+  </footer>
+
+  <!-- Music Player -->
+  <audio id="weddingAudio" loop>
+    <source src="music/sparkles.mp4" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button id="musicToggle" class="music-control">
+    <span id="musicIcon">▶</span>
+  </button>
+
+  <script>
+    // Music controls
+    const audio = document.getElementById('weddingAudio');
+    const musicToggle = document.getElementById('musicToggle');
+    const musicIcon = document.getElementById('musicIcon');
+    let musicStarted = false;
+    // Set initial volume
+    if (audio) audio.volume = 0.5;
+    // Hide music button initially
+    if (musicToggle) musicToggle.style.display = 'none';
+    // Splash screen logic
+    const splashScreen = document.querySelector('.splash-screen');
+    const enterButton = document.getElementById('enterSite');
+    const mainContent = document.querySelector('body');
+    if (splashScreen && enterButton && mainContent) {
+        document.body.style.overflow = 'hidden';
+        enterButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Create ripple effect
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple-effect');
+            this.appendChild(ripple);
+            // Position ripple at click location
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+            setTimeout(() => { ripple.remove(); }, 600);
+            splashScreen.classList.add('hidden');
+            setTimeout(() => {
+                splashScreen.style.display = 'none';
+                mainContent.classList.remove('hidden');
+                document.body.style.overflow = 'auto';
+                document.documentElement.style.overflow = 'auto';
+                if (musicToggle) musicToggle.style.display = 'flex';
+                if (audio) {
+                    const playPromise = audio.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            musicIcon.textContent = '⏸';
+                            musicStarted = true;
+                        }).catch(error => {
+                            musicIcon.textContent = '▶';
+                            musicStarted = false;
+                            console.log("Audio playback was blocked:", error);
+                        });
+                    }
+                }
+                if (window.location.pathname.includes('gallery.html')) {
+                    const gallerySection = document.querySelector('.gallery-section');
+                    if (gallerySection) {
+                        void gallerySection.offsetHeight;
+                        gallerySection.style.minHeight = 'calc(100vh - 200px)';
+                    }
+                }
+            }, 1000);
+        });
+    } else {
+        document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
+        if (musicToggle) musicToggle.style.display = 'flex';
+        if (audio) {
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    musicIcon.textContent = '⏸';
+                    musicStarted = true;
+                }).catch(error => {
+                    musicIcon.textContent = '▶';
+                    musicStarted = false;
+                    console.log("Audio playback was blocked:", error);
+                });
+            }
+        }
+        if (window.location.pathname.includes('gallery.html')) {
+            const gallerySection = document.querySelector('.gallery-section');
+            if (gallerySection) {
+                gallerySection.style.minHeight = 'calc(100vh - 200px)';
+            }
+        }
+    }
+    // Music play/pause toggle
+    if (musicToggle && audio && musicIcon) {
+        musicToggle.addEventListener('click', function() {
+            if (!musicStarted) return;
+            if (audio.paused) {
+                audio.play().then(() => {
+                    musicIcon.textContent = '⏸';
+                });
+            } else {
+                audio.pause();
+                musicIcon.textContent = '▶';
+            }
+        });
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+  // Loader
+  setTimeout(() => {
+    document.querySelector('.loader').classList.add('hidden');
+  }, 1000);
+  
+  // Countdown Timer
+  function updateCountdown() {
+    const weddingDate = new Date('December 18, 2026 15:00:00').getTime();
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+    
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+  }
+  
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+  
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+  });
+  
+  // Gallery functionality
+  const thumbnails = document.querySelectorAll('.gallery-thumbnails img');
+  const mainImage = document.querySelector('.gallery-main img');
+  let currentIndex = 0;
+  const images = [
+    './assets/images/1.jpg',
+    './assets/images/2.jpg',
+    './assets/images/3.jpg',
+    './assets/images/4.jpg',
+    './assets/images/5.jpg',
+    './assets/images/6.jpg',
+    './assets/images/7.jpg',
+    './assets/images/8.jpg',
+    './assets/images/9.jpg',
+    './assets/images/10.jpg',
+  ];
+  
+  function updateGallery(index) {
+    mainImage.src = images[index];
+    thumbnails.forEach((thumb, i) => {
+      thumb.classList.toggle('active', i === index);
+    });
+    currentIndex = index;
+  }
+  
+  thumbnails.forEach((thumb, index) => {
+    thumb.addEventListener('click', function() {
+      updateGallery(index);
+    });
+  });
+  
+  document.querySelector('.gallery-next').addEventListener('click', function() {
+    const nextIndex = (currentIndex + 1) % images.length;
+    updateGallery(nextIndex);
+  });
+  
+  document.querySelector('.gallery-prev').addEventListener('click', function() {
+    const prevIndex = (currentIndex - 1 + images.length) % images.length;
+    updateGallery(prevIndex);
+  });
+  
+  // Swipe functionality for mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  mainImage.parentElement.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
+  
+  mainImage.parentElement.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, false);
+  
+  function handleSwipe() {
+    if (touchEndX < touchStartX - 50) {
+      // Swipe left
+      const nextIndex = (currentIndex + 1) % images.length;
+      updateGallery(nextIndex);
+    }
+    if (touchEndX > touchStartX + 50) {
+      // Swipe right
+      const prevIndex = (currentIndex - 1 + images.length) % images.length;
+      updateGallery(prevIndex);
+    }
+  }
+  
+  // Active nav link
+  const navLinks = document.querySelectorAll('.nav-buttons a');
+  
+  window.addEventListener('scroll', function() {
+    let current = '';
+    
+    document.querySelectorAll('div.section').forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      
+      if (pageYOffset >= (sectionTop - 300)) {
+        current = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // RSVP Modal with Google Form
+  const modal = document.getElementById("rsvpModal");
+  const btn = document.getElementById("openRsvp");
+  const span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  }
+
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+    
+  </script>
+
+</body>
+</html>
