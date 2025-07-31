@@ -1766,6 +1766,14 @@ footer {
   font-weight: bold;
   color: #d3e3d0;
   transition: background 0.2s, box-shadow 0.2s, transform 0.15s, color 0.2s;
+  /* iOS-specific improvements */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Ensure it's always visible on iOS */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .music-control:hover, #musicToggle:hover {
   background: linear-gradient(135deg, #eaf3e7 60%, #fff 100%);
@@ -1779,6 +1787,23 @@ footer {
   font-weight: bold;
   color: inherit;
   line-height: 1;
+}
+
+/* iOS and mobile-specific music control improvements */
+@media (max-width: 768px) {
+  .music-control, #musicToggle {
+    width: 64px;
+    height: 64px;
+    bottom: 24px;
+    right: 24px;
+    font-size: 2.4rem;
+    /* More prominent shadow for better visibility */
+    box-shadow: 0 6px 20px rgba(211, 227, 208, 0.25), 0 2px 8px rgba(0,0,0,0.12);
+  }
+  
+  #musicIcon {
+    font-size: 2.4rem;
+  }
 }
 
 @media (max-width: 700px) {
